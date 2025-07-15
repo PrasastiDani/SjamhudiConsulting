@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - NewBiz Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NewBiz
+  * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      left: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px #999;
+      z-index: 100;
+      /* Perfect centering using flexbox */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    /* Alternative method using line-height (comment out flexbox above if using this) */
+    /*
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        left: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 60px;
+        box-shadow: 2px 2px 5px #999;
+        z-index: 100;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    */
+
+    /* Demo content to show the button in context */
+    body {
+      height: 200vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top" style="background-color: white;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <!-- Uncomment the line below if you also wish to use text logo -->
+        <!-- <h1 class="sitename">NewBiz</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1>Membangun Solusi, Mendorong Perubahan, Mewujudkan Dampak</h1>
+            <p>Perusahaan konsultan profesional yang bergerak di pengembangan strategi, tata kelola organisasi,
+              peningkatan kapasitas SDM, serta optimalisasi data & teknologi untuk sektor publik dan swasta.</p>
+            <!-- <div class="d-flex"> -->
+            <!-- <a href="#about" class="btn-get-started">Get Started</a> -->
+            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up"
+            data-aos-delay="200">
+            <img src="assets/img/about.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
+            <h3>Tentang Kami</h3>
+            <p>
+              Sjamhudi Consulting adalah perusahaan konsultan profesional yang berdedikasi untuk membangun tata kelola
+              organisasi yang unggul, strategis, dan berdampak di Asia Tenggara.
+            </p>
+            <ul>
+              <li>
+                <i class="bi bi-diagram-3" style="color: #D5C069;"></i>
+                <div>
+                  <h5>Struktur & Tata Kelola yang Efektif</h5>
+                  <p>Kami membantu merancang struktur organisasi yang efisien untuk mendukung tujuan jangka panjang
+                    perusahaan.</p>
+                </div>
+              </li>
+              <li>
+                <i class="bi bi-fullscreen-exit" style="color: #D5C069;"></i>
+                <div>
+                  <h5>Pendampingan & Solusi Tepat Sasaran</h5>
+                  <p>Memberikan solusi strategis melalui analisis mendalam dan pendampingan berkelanjutan agar perubahan
+                    berdampak nyata.</p>
+                </div>
+              </li>
+              <li>
+                <i class="bi bi-broadcast" style="color: #D5C069;"></i>
+                <div>
+                  <h5>Inovasi & Transformasi Berkelanjutan</h5>
+                  <p>Mendorong inovasi dalam setiap lini bisnis agar mampu beradaptasi dengan dinamika pasar yang terus
+                    berubah.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="mb-4">Visi & Misi Kami</h3>
+            <div class="container">
+              <div class="card mb-3 border-4 shadow-sm" style="border-color: #D5C069;">
+                <div class="card-body">
+                  <h4 class="mb-2">Visi</h4>
+                  <p class="mb-0">
+                    Menjadi perusahaan konsultan terpercaya di Asia Tenggara dalam membangun tata kelola organisasi yang
+                    unggul, strategis, dan berdampak.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card border-4 shadow-sm" style="border-color: #D5C069;">
+                <div class="card-body">
+                  <h4 class="mb-2">Misi</h4>
+                  <ul class="mb-0">
+                    <li><i class="bi bi-check" style="color: #D5C069;"></i>Layanan konsultasi berkualitas tinggi
+                      berbasis riset dan pengalaman lapangan</li>
+                    <li><i class="bi bi-check" style="color: #D5C069;"></i>Membantu klien mencapai kinerja organisasi
+                      optimal</li>
+                    <li><i class="bi bi-check" style="color: #D5C069;"></i>Mengembangkan ekosistem layanan inovatif dan
+                      adaptif</li>
+                    <li><i class="bi bi-check" style="color: #D5C069;"></i>Meningkatkan kapasitas SDM melalui pelatihan
+                      dan pendampingan</li>
+                    <li><i class="bi bi-check" style="color: #D5C069;"></i>Analisis data & rekomendasi kebijakan
+                      berbasis bukti</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+              </li>
+              <li><i class="bi bi-check"></i> <span>Ullam est qui quos consequatur eos accusamus.</span></li>
+            </ul> -->
+          </div>
+        </div><!-- Features Item -->
+
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Value Section -->
+    <section id="nilai" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nilai Nilai Kami</h2>
+        <p>Nilai-nilai fundamental yang menjadi landasan dalam setiap layanan dan kemitraan yang kami bangun.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Top 3 items -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-shield-check" style="color: #0dcaf0;"></i>
+              </div>
+              <h3>Integritas</h3>
+              <p>Berkomitmen pada kejujuran dan transparansi dalam setiap layanan yang kami berikan.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-briefcase" style="color: #fd7e14;"></i>
+              </div>
+              <h3>Profesionalisme</h3>
+              <p>Memberikan layanan berkualitas tinggi dengan standar profesional terbaik.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-people" style="color: #20c997;"></i>
+              </div>
+              <h3>Kolaborasi</h3>
+              <p>Membangun kemitraan yang kuat dengan klien untuk mencapai tujuan bersama.</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+        <!-- Bottom 2 items centered -->
+        <div class="row gy-4 mt-1 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-lightbulb" style="color: #df1529;"></i>
+              </div>
+              <h3>Inovasi</h3>
+              <p>Mengembangkan solusi kreatif dan adaptif sesuai kebutuhan zaman.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-recycle" style="color: #6610f2;"></i>
+              </div>
+              <h3>Keberlanjutan</h3>
+              <p>Memastikan dampak positif jangka panjang dari setiap solusi yang kami tawarkan.</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Layanan Kami Section -->
+    <section id="layanan" class="section" style="background-color: #D5C069; padding: 80px 0;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+          <h2 style="font-size: 36px; font-weight: 600; color: #333; margin-bottom: 15px;">Layanan Kami</h2>
+          <p style="color: #666; font-size: 16px; max-width: 600px; margin: 0 auto; line-height: 1.6;">Solusi
+            komprehensif untuk mengoptimalkan kinerja organisasi Anda melalui pendekatan yang terstruktur dan berbasis
+            pengalaman.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Organisasi & Manajemen -->
+          <div class="col-lg-4 col-md-6">
+            <div
+              style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div
+                style="width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: white; background: linear-gradient(135deg, #8B5A96, #6B4C7A);">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333;">Organisasi & Manajemen
+              </h3>
+              <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+                Pengembangan struktur organisasi, sistem manajemen, dan tata kelola perusahaan yang efektif dan efisien.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Restrukturisasi Organisasi
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Sistem Manajemen Kinerja
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Tata Kelola Perusahaan
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Change Management
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pengembangan SDM -->
+          <div class="col-lg-4 col-md-6">
+            <div
+              style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div
+                style="width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: white; background: linear-gradient(135deg, #FF8C42, #E67E22);">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333;">Pengembangan SDM</h3>
+              <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+                Peningkatan kapasitas dan kompetensi sumber daya manusia melalui program yang terstruktur dan
+                berkelanjutan.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Assessment Kompetensi
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Talent Management
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Leadership Development
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Career Planning
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Strategi Bisnis -->
+          <div class="col-lg-4 col-md-6">
+            <div
+              style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div
+                style="width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: white; background: linear-gradient(135deg, #FF8C42, #E67E22);">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333;">Strategi Bisnis</h3>
+              <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+                Penyusunan strategi bisnis yang komprehensif untuk mencapai tujuan organisasi secara optimal.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Strategic Planning
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Business Model Canvas
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Market Analysis
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Competitive Strategy
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Riset & Kebijakan -->
+          <div class="col-lg-4 col-md-6">
+            <div
+              style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div
+                style="width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: white; background: linear-gradient(135deg, #5A7DB8, #4A6BA8);">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333;">Riset & Kebijakan</h3>
+              <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+                Penelitian mendalam dan penyusunan kebijakan berbasis data untuk mendukung pengambilan keputusan.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Policy Research
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Data Analysis
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Impact Assessment
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Regulatory Compliance
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pelatihan & Capacity Building -->
+          <div class="col-lg-4 col-md-6">
+            <div
+              style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div
+                style="width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: white; background: linear-gradient(135deg, #5A7DB8, #4A6BA8);">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333;">Pelatihan & Capacity
+                Building</h3>
+              <p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+                Program pelatihan dan pengembangan kapasitas yang disesuaikan dengan kebutuhan spesifik organisasi.
+              </p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Corporate Training
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Workshop & Seminar
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>Mentoring Program
+                </li>
+                <li style="color: #666; font-size: 14px; margin-bottom: 8px; position: relative; padding-left: 20px;">
+                  <span style="color: #FF8C42; position: absolute; left: 0;">●</span>E-Learning Platform
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section dark-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                          Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                          semper.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                          eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                          culpa.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
+                          duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
+                          minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore
+                          illum veniam.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>John Larson</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Hubungi Kami</h2>
+        <p>Siap untuk mengoptimalkan organisasi Anda? Tim ahli kami siap membantu merancang solusi terbaik sesuai kebutuhan spesifik Anda.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Alamat</h3>
+                <p>Jl. Veteran No.147, Pandeyan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55164</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telepon</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@sjamhudiconsulting.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer" style="background-color: #D5C069;">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Sjamhudi Consulting</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Veteran No.147</p>
+            <p>Pandeyan, Kec. Umbulharjo, Kota Yogyakarta</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@sjamhudiconsulting.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Layanan Kami</h4>
+          <ul>
+            <li><a href="#">Organisasi & Manajemen</a></li>
+            <li><a href="#">Pengembangan SDM</a></li>
+            <li><a href="#">Strategi Bisnis</a></li>
+            <li><a href="#">Riset Kebijakan</a></li>
+            <li><a href="#">Pelatihan & Capacity Building</a></li>
+          </ul>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sjamhudi Consulting</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">Prasasti Dani</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+</body>
+
+</html>
