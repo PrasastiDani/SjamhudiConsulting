@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - NewBiz Bootstrap Template</title>
+  <title>Sjamhudi Consulting</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -355,7 +358,7 @@
     <!-- Layanan Kami Section -->
     <section id="layanan" class="section" style="background-color: #D5C069; padding: 80px 0;">
       <div class="container">
-        <div style="text-align: center; margin-bottom: 50px;">
+        <div data-aos="fade-up" data-aos-duration="1000" style="text-align: center; margin-bottom: 50px;">
           <h2 style="font-size: 36px; font-weight: 600; color: #333; margin-bottom: 15px;">Layanan Kami</h2>
           <p style="color: #666; font-size: 16px; max-width: 600px; margin: 0 auto; line-height: 1.6;">Solusi
             komprehensif untuk mengoptimalkan kinerja organisasi Anda melalui pendekatan yang terstruktur dan berbasis
@@ -365,7 +368,7 @@
         <div class="row g-4">
           <!-- Organisasi & Manajemen -->
           <div class="col-lg-4 col-md-6">
-            <div
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500"
               style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
               onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
               <div
@@ -396,7 +399,7 @@
 
           <!-- Pengembangan SDM -->
           <div class="col-lg-4 col-md-6">
-            <div
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500"
               style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
               onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
               <div
@@ -427,7 +430,7 @@
 
           <!-- Strategi Bisnis -->
           <div class="col-lg-4 col-md-6">
-            <div
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500"
               style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
               onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
               <div
@@ -457,7 +460,7 @@
 
           <!-- Riset & Kebijakan -->
           <div class="col-lg-4 col-md-6">
-            <div
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500"
               style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
               onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
               <div
@@ -487,7 +490,7 @@
 
           <!-- Pelatihan & Capacity Building -->
           <div class="col-lg-4 col-md-6">
-            <div
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500"
               style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); height: 100%; transition: transform 0.3s ease;"
               onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
               <div
@@ -720,7 +723,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Hubungi Kami</h2>
-        <p>Siap untuk mengoptimalkan organisasi Anda? Tim ahli kami siap membantu merancang solusi terbaik sesuai kebutuhan spesifik Anda.</p>
+        <p>Siap untuk mengoptimalkan organisasi Anda? Tim ahli kami siap membantu merancang solusi terbaik sesuai
+          kebutuhan spesifik Anda.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade" data-aos-delay="100">
@@ -755,36 +759,10 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.756600478765!2d110.38519097349452!3d-7.815569177605413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a570d2b485baf%3A0x11f71ea379d7eb47!2sJl.%20Veteran%20No.147%2C%20RT.41%2C%20Pandeyan%2C%20Kec.%20Umbulharjo%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055161!5e0!3m2!1sid!2sid!4v1752634914250!5m2!1sid!2sid"
+              width="650" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div><!-- End Contact Form -->
 
         </div>
@@ -838,12 +816,13 @@
           </ul>
         </div>
 
-        
+
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sjamhudi Consulting</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sjamhudi Consulting</strong> <span>All Rights
+          Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -871,6 +850,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
